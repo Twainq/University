@@ -19,6 +19,16 @@ namespace University
         {
             InitializeComponent();
         }
+        public Form3_Admin(List<Student> students)
+        {
+            InitializeComponent();
+            this.students = students;
+        }
+        public Form3_Admin(List<Prepod> prepods)
+        {
+            InitializeComponent();
+            this.prepods = prepods;
+        }
         public Form3_Admin(List<Student>students,List<Prepod> prepods, List<Group> group)
         {
             InitializeComponent();
@@ -90,6 +100,11 @@ namespace University
             Close();
             Form1 f = new Form1();
             f.Show();
+        }
+
+        private void Form3_Admin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

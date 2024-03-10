@@ -30,8 +30,6 @@ namespace University
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string FIO = textBox1.Text;
-            int mark = Convert.ToInt32(textBox2.Text);
             if (FindStudent())
             {
                 label3.Visible = true;
@@ -47,11 +45,12 @@ namespace University
         {
             foreach (Student student in students)
             {
-                if (student.fio == textBox1.Text)
-                {
-                    student.marks.Add(Convert.ToInt32(textBox2.Text));
-                    return true;
-                }
+                  if (student.fio == textBox1.Text)
+                  {
+                       student.marks.Add(Convert.ToInt32(textBox2.Text));
+                       return true;
+                  }
+                
             }
             return false;
         }

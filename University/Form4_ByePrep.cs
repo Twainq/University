@@ -50,7 +50,7 @@ namespace University
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
-            Form3_Admin f = new Form3_Admin();
+            Form3_Admin f = new Form3_Admin(prepods);
             f.Show();
         }
     }
