@@ -84,6 +84,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form4_ByePrep";
             this.Text = "Form4_ByePrep";
+            this.Load += new System.EventHandler(this.Form4_ByePrep_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

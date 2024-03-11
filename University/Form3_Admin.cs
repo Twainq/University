@@ -29,6 +29,24 @@ namespace University
             InitializeComponent();
             this.prepods = prepods;
         }
+        public Form3_Admin(List<Prepod> prepods, List<Student> students)
+        {
+            InitializeComponent();
+            this.prepods = prepods;
+            this.students = students;
+        }
+        public Form3_Admin(List<Prepod> prepods, List<Student> students, List<Group> group)
+        {
+            InitializeComponent();
+            this.prepods = prepods;
+            this.students = students;
+        }
+        public Form3_Admin( List<Student> students,List<Prepod> prepods)
+        {
+            InitializeComponent();
+            this.students = students;
+            this.prepods = prepods;
+        }
         public Form3_Admin(List<Student>students,List<Prepod> prepods, List<Group> group)
         {
             InitializeComponent();
@@ -75,7 +93,7 @@ namespace University
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4_ByeStud f = new Form4_ByeStud(students);
+            Form4_ByeStud f = new Form4_ByeStud(students,prepods,group);
             f.Show();
             Hide();
 
@@ -83,7 +101,7 @@ namespace University
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4_ByePrep f = new Form4_ByePrep(prepods);
+            Form4_ByePrep f = new Form4_ByePrep(prepods,students,group);
             f.Show();
             Hide();
         }

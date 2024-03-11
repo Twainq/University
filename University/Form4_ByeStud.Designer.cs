@@ -86,6 +86,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form4_ByeStud";
             this.Text = "Form4_ByeStud";
+            this.Load += new System.EventHandler(this.Form4_ByeStud_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

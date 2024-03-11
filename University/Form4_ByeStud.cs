@@ -12,11 +12,15 @@ namespace University
 {
     public partial class Form4_ByeStud : Form
     {
-        List<Student> students;
-        public Form4_ByeStud(List<Student> students)
+        public List<Student> students;
+        public List<Prepod> prepod;
+        public List<Group> group;
+        public Form4_ByeStud(List<Student> students, List<Prepod> prepod, List<Group> group)
         {
             InitializeComponent();
             this.students = students;
+            this.prepod = prepod;
+            this.group = group;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,8 +54,13 @@ namespace University
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
-            Form3_Admin f = new Form3_Admin(students);
+            Form3_Admin f = new Form3_Admin(students,prepod,group);
             f.Show();
+        }
+
+        private void Form4_ByeStud_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

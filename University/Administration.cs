@@ -24,8 +24,8 @@ namespace University
                 new Student("Victorov A.P", 17, 1, "897979797", "peru@gmail.com","student1","student1","P11",new List<int>{ 5,4,3,2,1}),
                 new Student("Egorov A.P", 17, 1, "897979797", "peru@gmail.com","student2","student2","P11",new List<int>{ 5,5,5,2,3}),
                 new Student("Solomonov A.P", 17, 1, "897979797", "peru@gmail.com","student3","student3","P11",new List<int>{ 4,4,3,5,2}),
-                new Student("Alekseev A.P", 17, 1, "897979797", "peru@gmail.com","student4","student4","P12" ,new List < int > { 5, 4, 4, 3, 5 }),
-                new Student("Sergeev A.P", 17, 1, "897979797", "peru@gmail.com","student5","student5", "P12",new List<int>{ 3,3,4,2,4})
+                //new Student("Alekseev A.P", 17, 1, "897979797", "peru@gmail.com","student4","student4","P12" ,new List < int > { 5, 4, 4, 3, 5 }),
+                //new Student("Sergeev A.P", 17, 1, "897979797", "peru@gmail.com","student5","student5", "P12",new List<int>{ 3,3,4,2,4})
             };
             prepods = new List<Prepod>
             {
