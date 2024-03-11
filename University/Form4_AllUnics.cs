@@ -42,19 +42,23 @@ namespace University
         private void label5_Click(object sender, EventArgs e)
         {
             int i = 1;
+            int j = 0;
+            int cntP11 = 0;
+            int cntP12 = 0;
             foreach (Student st in students)
             {
                 if (st.group == "P11")
-                    group[0].Cnt++;
+                    cntP11+=1;
 
                 else if (st.group == "P12")
-                    group[1].Cnt++;
+                    cntP12+=1;
             }
+            List <int> gro = new List<int> { cntP11, cntP12 };
             foreach (Group gr in group)
             {
                 label5.Text += $"{i++} группа: \n";
                 label5.Text += "НАЗВАНИЕ : " + gr.Name + "\n";
-                label5.Text += "КОЛИЧЕСТВО УЧАЩИХСЯ : " + gr.Cnt + "\n";
+                label5.Text += "КОЛИЧЕСТВО УЧАЩИХСЯ : " + gro[j++] + "\n";
                 label5.Text += "\n";
             }
         }

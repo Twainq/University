@@ -47,8 +47,15 @@ namespace University
             {
                   if (student.fio == textBox1.Text)
                   {
-                       student.marks.Add(Convert.ToInt32(textBox2.Text));
-                       return true;
+                    try
+                    {
+                        student.marks.Add(Convert.ToInt32(textBox2.Text));
+                        return true;
+                    } catch
+                    {
+                        MessageBox.Show("Введите корректные данные в поле 'Отметка'!");
+                    }
+               
                   }
                 
             }
